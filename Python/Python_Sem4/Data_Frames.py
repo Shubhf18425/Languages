@@ -47,6 +47,7 @@ print(f)
 # print(f["Age"].describe())
 # print(f["Income"].describe())
 
-
+print(np.percentile(f["Age"], 50)) # 50th percentile
+print(np.percentile(f["Income"], 50)) # 50th percentile
 
 
