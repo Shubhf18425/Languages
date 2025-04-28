@@ -1,0 +1,17 @@
+JavaScript 
+    ->Synchronus
+    ->Single Threaded
+
+Exection Context 
+    ->Execute one line of code at a time (Each operation waits for the last one to complete before executing )
+    -> Console log -> 1
+    -> Console log  -> 2
+Call              Stack Memory Heap 
+
+Blocking code           vs              non blocking code
+-> block the flow of programe       -> Does not block exectuion
+-> Read File sync                   -> Read File Async
+
+
+
+![JavaScript Logo](image.png)  
