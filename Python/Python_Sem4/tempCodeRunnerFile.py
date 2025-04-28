@@ -1,2 +1,1 @@
-
-# ob.printStr()
+print(f.shape)
