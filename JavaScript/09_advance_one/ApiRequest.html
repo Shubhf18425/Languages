@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: darkgray;">
+    <h1>Api_Request</h1>
+</body>
+<script> 
+
+const xhr = new XMLHttpRequest(); 
+xhr.open('GET' , 'https://api.github.com/users/shubhf18425')
+xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState == 4 && xhr.status == 200){
+        const data = JSON.parse(xhr.responseText) // string to object
+        console.log(data);
+        document.body.innerHTML += `<h1>${data.login}</h1>`
+        document.body.innerHTML += `<h1>${data.id}</h1>`
+        document.body.innerHTML += `<img src = "${data.avatar_url}">`
+    }
+}
+xhr.send()
+
+</script>
+</html>
